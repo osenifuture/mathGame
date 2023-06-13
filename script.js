@@ -1,20 +1,20 @@
 
 
-    var num1 = generateRandomNumber(1, 10);
-    var num2 = generateRandomNumber(1, 10);
-    var operator = generateRandomNumber(1, 3); // 1: addition, 2: subtraction, 3: multiplication
-  
-    var question;
-    var answer;
-
 
 function generateRandomNumber(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-  }
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+
+
+function generateQuestion() {
   
+  var num1 = generateRandomNumber(1, 10);
+  var num2 = generateRandomNumber(1, 10);
+  var operator = generateRandomNumber(1, 3); // 1: addition, 2: subtraction, 3: multiplication
   
-  function generateQuestion() {
-    
+  var question;
+  var answer;
   
     switch (operator) {
       case 1:
